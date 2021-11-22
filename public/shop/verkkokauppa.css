@@ -1,0 +1,100 @@
+    .Left-Screen {
+      width: 900px;
+      height: 100%;
+      float: left;
+      margin: 3px;
+      text-align: left;
+    }
+    .Right-Screen {
+      width: 220px;
+      height: 100%;
+      float: left;
+      margin: 3px 4px;
+      text-align: left;
+    }
+    .Title {
+      font-weight: bold;
+      float: left;
+      margin: 6px 4px
+    }
+    .filters{
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    .Logout {
+      float: right;
+      padding-right: 5px;
+      margin: 5px;
+      font-size: 14px;
+    }
+    .Product {
+      border: 1px dotted grey;
+      width: 200px;
+      height: 300px;
+      float: left;
+      margin: 5px;
+      padding: 5px;
+      overflow: auto;
+      font-size: 15px;
+      text-align: center;
+    }
+    .Product img {
+      width: 60px;
+      float: top;
+      padding-right: 5px;
+      margin: 5px;
+    }
+    .Product button {
+      float: right;
+      padding-right: 5px;
+      margin: 5px;
+      font-size: 16px;
+    }
+    .Product-Title {
+      font-weight: bold;
+    }
+    .Product-Category {
+    font-style: italic
+    }
+    .ProductOfCart {
+      border-bottom: 1px dotted grey;
+      border-top: 1px dotted grey;
+      width: 220px;
+      height: 75px;
+      float: left;
+      margin: 3px;
+      font-size: 30%;
+      text-align: left;
+    }
+    .ProductOfCart-Title {
+      white-space: nowrap; 
+      width: 135px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .ProductOfCart-Summa {
+      text-align: right;
+      font-weight: bold
+    }
+    .ProductOfCart img {
+      width: 38px;
+      float: left;
+      padding-right: 5px;
+      margin: 5px;
+    }
+    .ProductOfCart button {
+      float: right;
+      padding: 0px 3px;
+      margin: 3px;
+      font-size: 10px;
+    }
+    #total {
+      font-weight: bold;
+      font-size: 14px;
+      text-align: center;
+    }
+    #welcome {
+      text-decoration: underline;
+      color: rgb(0, 9, 128);
+      font-style: italic;
+    }

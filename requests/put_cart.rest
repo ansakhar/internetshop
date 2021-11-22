@@ -1,0 +1,15 @@
+PUT http://localhost:3000/carts/618f98192de60a7cc3eb6161
+Content-Type: application/json
+
+{
+    "products": [
+            {
+                "productId": "61851695196a18e12bab4ee7",
+                "quantity": 3
+            },
+            {
+                "productId": "61851843196a18e12bab4eea",
+                "quantity": 3
+            }
+        ]
+}

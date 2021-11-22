@@ -1,0 +1,6 @@
+POST http://localhost:3000/carts
+Content-Type: application/json
+
+{
+    "userId": "61954b36682c8550fc8c8cac"
+}

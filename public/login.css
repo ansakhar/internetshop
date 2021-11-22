@@ -1,0 +1,33 @@
+.inputForm {
+    width: 400px;
+    background-color: aliceblue;
+    border-radius: 3px;
+    padding: 0 15px 0;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+    font-family: 'Oswald', sans-serif;
+}
+h1 {
+    background-color: rgb(37, 139, 223);
+    text-align: center;
+    color: white;
+    padding: 5px 0;
+    border-radius: 0 0 2px 2px;
+}
+input[type=text], input[type=password] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 290px;
+    font-size: 15px;
+}
+button {
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+#infoText {
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Online-shop interface</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./verkkokauppa.css">
+  <script type="text/javascript" src="./verkkokauppa.js"></script>
+</head>
+
+<body onload="init()">
+<div class="Left-Screen">
+    <div class="Title">Products</div>
+    <br><br>
+  <select id="filterCategory" class="filters" size="1">
+    <option selected value="-">all categories</option>
+    <option value="men's clothing">men's clothing</option>
+    <option value="women's clothing">women's clothing</option>
+    <option value="jewelery">jewelery</option>
+    <option value="electronics">electronics</option>
+  </select>
+  <select id="filterPrice" class="filters" size="1">
+    <option selected value="-">all products</option>
+    <option value="50">max 50€</option>
+    <option value="100">max 100€</option>
+    <option value="500">max 500€</option>
+  </select>
+  <div id="products"></div>
+</div>
+
+<div class="Right-Screen">
+    <button onclick="logout()" class="Logout">Logout</button>
+    <div class="Title">Shopping cart of <span id="welcome"></span></div>
+    <br>
+    <div id="cart"></div>
+    <br><br>
+    <div id="total"></div>
+</div>
+
+   <p id="infoText"></p>
+
+</body>
+
+</html>
