@@ -13,7 +13,14 @@ cartsRouter.get('/:userId', async (request, response) => {
     if (cart) response.json(cart)
     else response.status(404).end()
   })
-  
+
+// delete all carts
+cartsRouter.delete('/', async (request, response) => {
+  const info = await Cart.deleteMany({})
+    if (info) response.json(info)
+    else response.status(404).end()
+})
+
 // editing the contents of the cart
 cartsRouter.put('/:id', async (request, response, next) => {
     const body = request.body

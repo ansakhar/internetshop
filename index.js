@@ -4,22 +4,20 @@ const cors = require('cors')
 const app = express()
 var path = require("path")
 
-/*Serving static files from 'public'-directory:
-login.js, login.css, verkkokauppa.js, verkkokauppa.css*/
-app.use(express.static('public'))
-
+//controllers:
 const usersRouter = require('./controllers/users')
 const productsRouter = require('./controllers/products')
 const cartsRouter = require('./controllers/carts')
+
+/*Serving static files from 'public'-directory:
+login.js, login.css, verkkokauppa.js, verkkokauppa.css*/
+app.use(express.static('public'))
 
 // cors - allow connection from different domains and ports
 app.use(cors())
 
 // convert json string to json object (from request)
 app.use(express.json())
-
-//?
-app.use(express.urlencoded({extended: true}))
 
 app.use('/users', usersRouter)
 app.use('/products', productsRouter)
