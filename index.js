@@ -37,17 +37,17 @@ db.once('open', function() {
 
 // initial page: login-register form
 app.get('/', (request, response) => {
-  response.sendFile(path.join(__dirname + '/login.html'))
+  response.sendFile(path.join(__dirname + '/public/login.html'))
 })
 
 // shop-route
 app.get('/shop', (request, response) => {
-    response.sendFile(path.join(__dirname + '/verkkokauppa.html'))
+    response.sendFile(path.join(__dirname + '/public/shop/verkkokauppa.html'))
   })
 
 // shop-route by id
 app.get('/shop/?userId=:id', async(request, response) => {
-  response.sendFile(path.join(__dirname + '/verkkokauppa.html'))
+  response.sendFile(path.join(__dirname + '/public/shop/verkkokauppa.html'))
 })
 
 // app listen port
