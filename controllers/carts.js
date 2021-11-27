@@ -1,7 +1,7 @@
 const cartsRouter = require('express').Router()
 const Cart = require('../models/cart')
 
-// carts-route
+// carts-route - not in use
 cartsRouter.get('/', async (request, response) => {
     const carts = await Cart.find({})
     response.json(carts)
@@ -14,7 +14,7 @@ cartsRouter.get('/:userId', async (request, response) => {
     else response.status(404).end()
   })
 
-// delete all carts
+// delete all carts - not in use
 cartsRouter.delete('/', async (request, response) => {
   const info = await Cart.deleteMany({})
     if (info) response.json(info)
@@ -39,7 +39,6 @@ cartsRouter.put('/:id', async (request, response, next) => {
 
 //adding a new cart for new user
 cartsRouter.post('/', async (request, response) => {
-    //const body = request.body
     const cart = new Cart({
       products: [],
       userId: request.body.userId
