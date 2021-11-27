@@ -107,15 +107,15 @@ async  function buyProduct(productId) {
 }
 
 //filter products by category
-function filterByCategory(array) {
+function filterByCategory(products) {
     let category = document.getElementById("filterCategory").value
-    return array.filter(product => product.category === category)
+    return products.filter(product => product.category === category)
 }
 
 //filter products by price
-function filterByPrice(array) {
+function filterByPrice(products) {
     let maxPrice = parseInt(document.getElementById("filterPrice").value)
-    return array.filter(product => product.price <= maxPrice)
+    return products.filter(product => product.price <= maxPrice)
 }
 
 //downloading products information from the server
