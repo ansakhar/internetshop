@@ -7,7 +7,7 @@ productsRouter.get('/', async (request, response) => {
       response.json(products)
   })
   
-// products/:category -route 
+// products/:category -route - not in use
 productsRouter.get('/:category', async (request, response) => {
   const products = await Product.find({category:request.params.category})
   response.json(products)
@@ -20,7 +20,7 @@ productsRouter.get('/id/:id', async (request, response) => {
     else response.status(404).end()
   })
 
-//adding a new product
+//adding a new product - not in use
 productsRouter.post('/', async (request, response) => {
   //const body = request.body
   const product = new Product({

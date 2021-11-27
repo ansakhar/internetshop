@@ -40,7 +40,7 @@ app.get('/', (request, response) => {
   response.sendFile(path.join(__dirname + '/public/login.html'))
 })
 
-// shop-route
+// shop-route - not in use
 app.get('/shop', (request, response) => {
     response.sendFile(path.join(__dirname + '/public/shop/verkkokauppa.html'))
   })

@@ -1,7 +1,7 @@
 const usersRouter = require('express').Router()
 const User = require('../models/user')
 
-// get-request /users -route
+// get-request /users -route - not in use
 usersRouter.get('/', async (request, response) => {
     const users = await User.find({})
       response.json(users)
@@ -14,14 +14,14 @@ usersRouter.get('/:email', async (request, response) => {
     else response.status(404).end()
 })
 
-// users/id/:id-route
+// users/id/:id -route
 usersRouter.get('/id/:id', async (request, response) => {
     const user = await User.findById(request.params.id)
       if (user) response.json(user)
       else response.status(404).end()
     })
 
-// delete all users
+// delete all users - not in use
 usersRouter.delete('/', async (request, response) => {
   const info = await User.deleteMany({})
     if (info) response.json(info)
