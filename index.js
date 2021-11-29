@@ -1,4 +1,4 @@
-//const config = require('./utils/config')
+const config = require('./utils/config')
 const express = require('express')
 const cors = require('cors')
 const app = express()
@@ -26,8 +26,7 @@ app.use('/carts', cartsRouter)
 // Connection to MongoDB database.
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://fullstackas:143080Mongo@cluster0.mrl4q.mongodb.net/verkkokauppa', {useNewUrlParser: true, useUnifiedTopology: true})
-//mongoose.connect(config.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect(config.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true})
 
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'connection error:'))
